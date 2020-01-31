@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% comment %} <link rel="stylesheet" href="{% static '/css/style.css'%}"> {% endcomment %}
+    <title>Питомцы</title>
+<body>
+<div class="main-content">
+    <div class="col-lg-4">
+        <a href="#">
+            <img height="400" width="400"
+                 src="{{ object.photo.url }}" alt="" class="fit">
+        </a>
+    </div>
+    <div class="pet-bio-text">
+        <ul>
+            <li>Кличка: {{object.name}}</li>
+            <li>Возраст: {{object.age}}</li>
+            <li>Порода: {{object.breed}}</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>

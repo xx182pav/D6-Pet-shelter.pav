@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Eroxion BT Roman";
+    src: url('/static/fonts/Eroxion BT Roman.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "Celestia Medium";
+    src: url('/static/fonts/Celestia Medium.ttf') format('truetype');
+}
+
+
+html, body {
+    height: 100%;
+    max-height: 100%;
+}
+
+.navbar {
+    background-color: coral;
+    
+}
+.navbar-brand {
+    font-family: Eroxion BT Roman; 
+}
+
+.nav-item{
+    font-family:Celestia Medium; 
+}
+
+#logo{
+    font-family: RuslanDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 54px;
+    color: #CDAD6D;
+    mix-blend-mode: normal;
+}
+.search-form{
+    width: 200px;
+    height: 48px;
+    background: #C4C4C4;
+    mix-blend-mode: luminosity;
+    border-radius: 5px;
+    font-family:RuslanDisplay;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #CDAD6D;
+}
+
+main{
+    min-height: calc(100vh - 235px);
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+    background: rgba(255, 255, 255, 0.62);
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns:  25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+
+}
+
+
+
+img.fit {
+    margin: 10px 10px 10px 0px;
+    width: 300px;
+    height: 300px;
+    border-radius:5px;
+    object-fit:cover;
+}
+
+.pet-bio-text {
+    padding-left: 120px;
+    margin: 10px 10px 10px 0px;
+    font-family:Skuntch;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: black;
+}
+
+
+.footer {
+    position: relative;
+    margin-top:494px;
+    padding-right:400px;
+    padding-top: 8px;
+    height:58px;
+    clear: both;
+    background-color: coral;
+}
+

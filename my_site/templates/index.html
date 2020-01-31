@@ -1,0 +1,26 @@
+
+{% extends 'base.html' %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% comment %} <link rel="stylesheet" href="{% static '/css/style.css'%}"> {% endcomment %}
+    <title>О нас</title>
+<body>
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+{% block content %}
+<div style="margin-left:10px;">
+    <span class="pet-bio-text">
+        <H2>О нас</H2>
+        <p>"Дом Питомца" - это муниципальный приют для бездомных кошек и котов.</p>
+        <p>В нем живет почти 500 кошек и котов. </p>
+        <p>Пушистые, короткошерстные и веселые и-</p>
+        <p>и на всех одна большая мечта - встретить своего
+            Человека и найти Дом.</p>
+    </span>
+</div>
+{% endblock %}
+</body>
+</html>

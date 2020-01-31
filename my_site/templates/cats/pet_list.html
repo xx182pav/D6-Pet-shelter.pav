@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% comment %} <link rel="stylesheet" href="{% static '/css/style.css'%}"> {% endcomment %}
+    <title>Питомцы</title>
+<body>
+<div class="main-content">
+    {% for pet in object_list %}
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+        <a href="/cats/{{pet.pk}}">
+            <img height="200" width="200"
+                 src="{{ pet.photo.url }}" alt="" class="fit">
+        </a>
+        <div class="pet-bio-text">
+            {{pet.name}}
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
+{% endblock %}
+</body>
+</html>
